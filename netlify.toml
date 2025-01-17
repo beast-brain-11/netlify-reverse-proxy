@@ -1,6 +1,8 @@
 [build]
   command = "echo 'Skipping build process'"
-  publish = "/"
+  publish = "./"
+  functions = "netlify/functions"
+
 [[redirects]]
   from = "/reverse-proxy/*"
   to = "/.netlify/functions/reverse-proxy/:splat"
